@@ -1,0 +1,97 @@
+body {
+
+  color: #27464e;
+  background-color: #dde2e3;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.content {
+  background-color: #f8f8f8;
+}
+
+.portrait {
+
+  display: block;
+  margin: 2em auto 2em auto;
+  width: 15em;
+}
+
+.icon {
+  
+  color: inherit;
+  text-decoration: none;
+  margin: 0.25em;
+}
+
+.icon:link {
+  
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon:visited {
+  
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon:hover {
+  
+  color: inherit;
+  text-decoration: none;
+}
+
+.tab { 
+
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+/*
+  Thumbnail iframes
+ 
+  Tutorial and credit: 
+  https://medium.com/@jamesfuthey/simulating-the-creation-of-website-thumbnail-screenshots-using-iframes-7145269891db
+*/
+
+.thumbnail-container {
+
+  width: 320px;
+  height: 256px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/*
+  -ms     -> IE
+  -moz    -> Mozilla Firefox
+  -o      -> Opera
+  -webkit -> safari & chrome
+*/
+.thumbnail {
+
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+.thumbnail, iframe {
+
+  width: 1280px;
+  height: 1024px;
+}
+
+.thumbnail:after {
+  
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
