@@ -1,0 +1,13 @@
+@import './_variables';
+
+body {
+
+  background-color: $background-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+
+  margin: 1em;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+@import '../_variables';
+
+.profile-bar {
+
+  background-color: $foreground-color;
+  float: left;
+  color: $light-font;
+  margin: 1em;
+  width: 25vw;
+  text-align: center;
+
+  @media (max-width: 960px) {
+    width: 40vw;
+  }
+
+  @media (max-width: 760px) {
+
+    float: none;
+    display: block;
+    margin: 1em auto;
+    width: 90vw;
+  }
+}
+
+.profile-info {
+  //background-color: $foreground-color;
+}
+
+.portrait {
+
+  display: block;
+  margin: auto;
+  padding: 3em 0 1em 0;
+  width: 65%;
+}
+
+.icon {
+
+  color: white;
+  margin: 0.5em;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: #cccccc;
+    text-decoration: none;
+  }
+}

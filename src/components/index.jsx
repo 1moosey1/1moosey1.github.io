@@ -1,48 +1,46 @@
-import ProfileBar from './ProfileBar.jsx';
-import WebProject from './WebProject.jsx';
+import styles from './index.scss';
+import projects from './projects.js';
+import ProfileBar from './ProfileBar/ProfileBar.jsx';
+import WebProject from './Projects/WebProject.jsx';
 
 var Content = React.createClass({
   
-  render: function() {
+    render: function() {
+
+        // Load all web projects stored in projects.js
+        var webprojects = [];
+        for(var project of projects.webprojects) {
+
+            var customLink = project.customLink;
+            webprojects.push(
+
+                (<WebProject title = { project.title }
+                    customLink = { customLink ? customLink : undefined}
+                    link = { project.link }
+                />)
+            )
+        }
     
-    return (
-      <div className="content">
-        <h1> Web Development </h1>
-        <WebProject
-          title="Gonzalez Welding"
-          customLink="http://gonzalezwelding.com"
-          link="gonzalezwelding.com"/>
-        <WebProject
-          title="Wikipedia Viewer"
-          link="wikipedia-viewer"/>
-        <WebProject
-          title="JavaScript Calculator"
-          link="js-calculator"/>
-        <WebProject
-          title="Tic Tac Toe"
-          link="tictactoe"/>
-        <WebProject
-          title="Pomodoro"
-          link="pomodoro-clock"/>
-        <WebProject
-          title="Twitch API"
-          link="twitch-list"/>
-      </div>
-    );
-  }
+        return (
+            <div className="content">
+                <h1> Web Development </h1>
+                { webprojects }
+            </div>
+        );
+    }
 });
 
 var App = React.createClass({
   
-  render: function() {
+    render: function() {
     
-    return (
-      <div>
-        <ProfileBar />
-        <Content />
-      </div>
-    );
-  }
+        return (
+            <div>
+                <ProfileBar />
+                <Content />
+            </div>
+        );
+    }
 });
 
 ReactDOM.render(<App />, document.body);

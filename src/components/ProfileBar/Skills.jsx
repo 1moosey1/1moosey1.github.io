@@ -1,3 +1,5 @@
+import styles from './skills.scss';
+
 module.exports = React.createClass({
 
     render: function() {
@@ -11,8 +13,7 @@ module.exports = React.createClass({
             jsx_skills.push((<p className="skill">{skills[i]}</p>));
 
         return (
-            <div className="skill-section">
-                <h2> Skills </h2>
+            <div className="skillsection">
                 {jsx_skills}
             </div>
         );

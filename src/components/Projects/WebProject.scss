@@ -1,0 +1,52 @@
+@import '../_variables';
+
+.tbinfo-wrapper {
+
+  display: inline-block;
+  background-color: $display-color;
+  width: 20em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $nav-font;
+  box-shadow: 2px 2px 4px #888888;
+
+  @media (max-width: 760px) {
+    width: 18em;
+  }
+}
+
+.info {
+
+  padding: 5px;
+  text-align: left;
+
+  h4 {
+    margin: 5px;
+  }
+
+  a {
+
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.thumbnail-container {
+
+  height: 256px;
+  width: inherit;
+  overflow: hidden;
+}
+
+.thumbnail {
+
+  img {
+    max-width: 100%;
+  }
+}

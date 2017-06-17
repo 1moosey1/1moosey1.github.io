@@ -1,3 +1,5 @@
+import styles from './WebProject.scss';
+
 module.exports = React.createClass({
 
     render: function() {
