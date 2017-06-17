@@ -7,8 +7,8 @@ module.exports = React.createClass({
 
         return (
             <div className="profile-bar">
-                <div className="profile-info">
 
+                <div>
                     <div>
                         <img src="dist/images/me.jpg" className="portrait"/>
                         <h3> Juan Gonzalez </h3>
@@ -36,9 +36,10 @@ module.exports = React.createClass({
                         <br/><br/>
                         <a className="icon" href="">Resume</a>
                     </div>
-
                 </div>
+
                 <Skills />
+
             </div>
         );
     }

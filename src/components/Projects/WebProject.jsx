@@ -22,7 +22,8 @@ module.exports = React.createClass({
                 </div>
 
                 <div className="info">
-                    <h4> {this.props.title} </h4>
+                    <h4> {this.props.title}</h4>
+                    <p><i>Tools: { this.props.tools } </i></p>
                     <a href={github_link}>Github Repo</a>
                     <span> | </span>
                     <a href={project_link}>Project Site</a>

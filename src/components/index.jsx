@@ -15,6 +15,7 @@ var Content = React.createClass({
             webprojects.push(
 
                 (<WebProject title = { project.title }
+                    tools = { project.tools }
                     customLink = { customLink ? customLink : undefined}
                     link = { project.link }
                 />)

@@ -1,31 +1,36 @@
 module.exports = {
 
-    webprojects: [
-      {
+    webprojects: [{
+
         title: "Gonzalez Welding",
+        tools: "django, sqlite",
         customLink: "http://gonzalezwelding.com",
         link: "gonzalezwelding.com"
       },
       {
-        title: "Wikipedia Viewer",
-        link: "wikipedia-viewer"
+          title: "Wikipedia Viewer",
+          tools: "jquery, wikipediaAPI",
+          link: "wikipedia-viewer"
       },
       {
-        title: "JavaScript Calculator",
-        link: "js-calculator"
+          title: "JavaScript Calculator",
+          tools: "jquery",
+          link: "js-calculator"
       },
       {
-        title: "Tic Tac Toe",
-        link: "tictactoe"
+          title: "Tic Tac Toe",
+          tools: "jquery",
+          link: "tictactoe"
       },
       {
-        title: "Pomodoro",
-        link: "pomodoro-clock"
-      }
-      ,
+          title: "Pomodoro Clock",
+          tools: "jquery",
+          link: "pomodoro-clock"
+      },
       {
-        title: "Twitch API",
-        link: "twitch-list"
+          title: "Twitch API",
+          tools: "jquery, twitchAPI",
+          link: "twitch-list"
       }
     ],
 
