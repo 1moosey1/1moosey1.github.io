@@ -1,5 +1,5 @@
 import styles from './index.scss';
-import projects from './projects.js';
+import projects from './Projects/projects.js';
 import ProfileBar from './ProfileBar/ProfileBar.jsx';
 import WebProject from './Projects/WebProject.jsx';
 

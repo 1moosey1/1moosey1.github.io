@@ -882,7 +882,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".profile-bar {\n  background-color: #374046;\n  box-shadow: 2px 2px 6px 2px #888888;\n  float: left;\n  color: #f0f4c3;\n  margin: 1em;\n  width: 25vw;\n  text-align: center; }\n  @media (max-width: 960px) {\n    .profile-bar {\n      width: 40vw; } }\n  @media (max-width: 760px) {\n    .profile-bar {\n      float: none;\n      display: block;\n      margin: 1em auto;\n      width: 90vw; } }\n\n.portrait {\n  display: block;\n  margin: auto;\n  padding: 3em 0 1em 0;\n  width: 65%; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n", ""]);
+exports.push([module.i, ".profile-bar {\n  background-color: #33464e;\n  box-shadow: 2px 2px 6px 2px #888888;\n  float: left;\n  color: #f0f4c3;\n  margin: 1em;\n  width: 25vw;\n  text-align: center; }\n  @media (max-width: 960px) {\n    .profile-bar {\n      width: 40vw; } }\n  @media (max-width: 760px) {\n    .profile-bar {\n      float: none;\n      display: block;\n      margin: 1em auto;\n      width: 90vw; } }\n\n.portrait {\n  display: block;\n  margin: auto;\n  padding: 3em 0 1em 0;\n  width: 65%; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n", ""]);
 
 // exports
 
@@ -910,7 +910,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #e8ebec;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  border-color: #1b81e5;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
+exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
 
 // exports
 
