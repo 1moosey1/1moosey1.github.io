@@ -688,6 +688,10 @@ module.exports = {
         customLink: "http://gonzalezwelding.com",
         link: "gonzalezwelding.com"
     }, {
+        title: "Simon Game",
+        tools: "react.js, sass, webpack",
+        link: "simon-game"
+    }, {
         title: "Wikipedia Viewer",
         tools: "jquery, wikipediaAPI",
         link: "wikipedia-viewer"
@@ -708,7 +712,6 @@ module.exports = {
         tools: "jquery, twitchAPI",
         link: "twitch-list"
     }],
-
     softwareprojects: []
 };
 
