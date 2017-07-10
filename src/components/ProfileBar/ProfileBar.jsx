@@ -34,7 +34,7 @@ module.exports = React.createClass({
                         </a>
 
                         <br/><br/>
-                        <a className="icon" href="">Resume</a>
+                        <a className="icon" href="dist/files/resume.pdf">Resume</a>
                     </div>
                 </div>
 

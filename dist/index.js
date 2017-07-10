@@ -585,7 +585,7 @@ module.exports = React.createClass({
                     React.createElement('br', null),
                     React.createElement(
                         'a',
-                        { className: 'icon', href: '' },
+                        { className: 'icon', href: 'dist/files/resume.pdf' },
                         'Resume'
                     )
                 )
