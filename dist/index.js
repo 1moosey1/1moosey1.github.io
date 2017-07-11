@@ -590,6 +590,20 @@ module.exports = React.createClass({
                     )
                 )
             ),
+            React.createElement(
+                'div',
+                { className: 'quote' },
+                React.createElement(
+                    'p',
+                    null,
+                    '\u201COf any activity you do, ask yourself: If I were the last person on earth, would I still do it?\u201D'
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    '- Steven Pressfield'
+                )
+            ),
             React.createElement(_Skills2.default, null)
         );
     }
@@ -885,7 +899,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".profile-bar {\n  background-color: #33464e;\n  box-shadow: 2px 2px 6px 2px #888888;\n  float: left;\n  color: #f0f4c3;\n  margin: 1em;\n  width: 25vw;\n  text-align: center; }\n  @media (max-width: 960px) {\n    .profile-bar {\n      width: 40vw; } }\n  @media (max-width: 760px) {\n    .profile-bar {\n      float: none;\n      display: block;\n      margin: 1em auto;\n      width: 90vw; } }\n\n.portrait {\n  display: block;\n  margin: auto;\n  padding: 3em 0 1em 0;\n  width: 65%; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n", ""]);
+exports.push([module.i, ".profile-bar {\n  background-color: #33464e;\n  box-shadow: 2px 2px 6px 2px #888888;\n  float: left;\n  color: #f0f4c3;\n  margin: 1em;\n  width: 25vw;\n  text-align: center; }\n  @media (max-width: 960px) {\n    .profile-bar {\n      width: 40vw; } }\n  @media (max-width: 760px) {\n    .profile-bar {\n      float: none;\n      display: block;\n      margin: 1em auto;\n      width: 90vw; } }\n\n.portrait {\n  display: block;\n  margin: auto;\n  padding: 3em 0 1em 0;\n  width: 65%; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n\n.quote {\n  margin: 2.5em 2.5em 0 2.5em; }\n", ""]);
 
 // exports
 

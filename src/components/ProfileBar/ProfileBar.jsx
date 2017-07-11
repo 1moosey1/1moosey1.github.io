@@ -16,6 +16,8 @@ module.exports = React.createClass({
                         <p> Software Developer </p>
                     </div>
 
+
+
                     <div>
                         <a title="Linkedin" href="https://linkedin.com/in/juan-gonzalez-659207139" className="icon">
                             <i className="fa fa-linkedin fa-2x"></i>
@@ -36,6 +38,15 @@ module.exports = React.createClass({
                         <br/><br/>
                         <a className="icon" href="dist/files/resume.pdf">Resume</a>
                     </div>
+                </div>
+
+                <div className="quote">
+                    <p>
+                        “Of any activity you do, ask yourself: If I were the last person on earth, would I still do it?”
+                    </p>
+                    <p>
+                        - Steven Pressfield
+                    </p>
                 </div>
 
                 <Skills />
