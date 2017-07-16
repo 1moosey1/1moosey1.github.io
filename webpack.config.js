@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
 
-    entry: './src/components/index.jsx',
+    entry: './components/index.jsx',
     output: {
 
         filename: 'index.js',

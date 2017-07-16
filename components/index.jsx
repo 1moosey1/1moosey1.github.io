@@ -1,6 +1,7 @@
-import styles from './index.scss';
+import './index.scss';
 import projects from './Projects/projects.js';
-import ProfileBar from './ProfileBar/ProfileBar.jsx';
+import TopBar from './TopBar/TopBar.jsx';
+import About from './About/About.jsx';
 import WebProject from './Projects/WebProject.jsx';
 
 var Content = React.createClass({
@@ -37,7 +38,8 @@ var App = React.createClass({
     
         return (
             <div>
-                <ProfileBar />
+                <TopBar />
+                <About />
                 <Content />
             </div>
         );

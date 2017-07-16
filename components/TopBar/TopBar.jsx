@@ -1,24 +1,23 @@
-import styles from './profilebar.scss';
-import Skills from './Skills.jsx';
+import './topbar.scss';
+import NavBar from './NavBar.jsx';
 
 module.exports = React.createClass({
 
     render: function() {
 
         return (
-            <div className="profile-bar">
+            <div className="topbar">
 
-                <div>
-                    <div>
-                        <img src="dist/images/me.jpg" className="portrait"/>
-                        <h3> Juan Gonzalez </h3>
-                        <p> Computer Science Major <br/> University of California, Santa Cruz </p>
-                        <p> Software Developer </p>
-                    </div>
+                <div className="nav-wrapper">
+                    <NavBar />
+                </div>
 
+                <div className="header">
+                    <h1> Juan C. Gonzalez </h1>
+                    <h3> &lt; Software Developer /&gt; </h3>
+                </div>
 
-
-                    <div>
+                    <div style={{ display: "none" }}>
                         <a title="Linkedin" href="https://linkedin.com/in/juan-gonzalez-659207139" className="icon">
                             <i className="fa fa-linkedin fa-2x"></i>
                         </a>
@@ -36,11 +35,10 @@ module.exports = React.createClass({
                         </a>
 
                         <br/><br/>
-                        <a className="icon" href="dist/files/resume.pdf">Resume</a>
                     </div>
-                </div>
 
-                <div className="quote">
+
+                <div className="quote" style={{ display: "none" }}>
                     <p>
                         “Of any activity you do, ask yourself: If I were the last person on earth, would I still do it?”
                     </p>
@@ -49,7 +47,6 @@ module.exports = React.createClass({
                     </p>
                 </div>
 
-                <Skills />
 
             </div>
         );

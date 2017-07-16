@@ -1,0 +1,39 @@
+.nav {
+
+  list-style-type: none;
+  padding: 5px;
+
+  ul {
+
+    margin: 10px;
+
+    li {
+
+      display: inline-block;
+
+      font-weight: bold;
+      color: white;
+      margin: 10px;
+      height: 2em;
+
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: white;
+
+      &:hover {
+
+        border-bottom-color: cadetblue;
+      }
+
+      a {
+
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    display: none;
+  }
+}

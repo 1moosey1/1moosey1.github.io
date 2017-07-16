@@ -514,109 +514,7 @@ function updateLink (link, options, obj) {
 "use strict";
 
 
-var _profilebar = __webpack_require__(12);
-
-var _profilebar2 = _interopRequireDefault(_profilebar);
-
-var _Skills = __webpack_require__(6);
-
-var _Skills2 = _interopRequireDefault(_Skills);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = React.createClass({
-    displayName: 'exports',
-
-
-    render: function render() {
-
-        return React.createElement(
-            'div',
-            { className: 'profile-bar' },
-            React.createElement(
-                'div',
-                null,
-                React.createElement(
-                    'div',
-                    null,
-                    React.createElement('img', { src: 'dist/images/me.jpg', className: 'portrait' }),
-                    React.createElement(
-                        'h3',
-                        null,
-                        ' Juan Gonzalez '
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        ' Computer Science Major ',
-                        React.createElement('br', null),
-                        ' University of California, Santa Cruz '
-                    ),
-                    React.createElement(
-                        'p',
-                        null,
-                        ' Software Developer '
-                    )
-                ),
-                React.createElement(
-                    'div',
-                    null,
-                    React.createElement(
-                        'a',
-                        { title: 'Linkedin', href: 'https://linkedin.com/in/juan-gonzalez-659207139', className: 'icon' },
-                        React.createElement('i', { className: 'fa fa-linkedin fa-2x' })
-                    ),
-                    React.createElement(
-                        'a',
-                        { title: 'Github', href: 'https://github.com/1moosey1', className: 'icon' },
-                        React.createElement('i', { className: 'fa fa-github fa-2x' })
-                    ),
-                    React.createElement(
-                        'a',
-                        { title: 'Codepen', href: 'https://codepen.io/1Moosey1', className: 'icon' },
-                        React.createElement('i', { className: 'fa fa-codepen fa-2x' })
-                    ),
-                    React.createElement(
-                        'a',
-                        { title: 'freeCodeCamp', href: 'https://www.freecodecamp.com/1moosey1', className: 'icon' },
-                        React.createElement('i', { className: 'fa fa-free-code-camp fa-2x' })
-                    ),
-                    React.createElement('br', null),
-                    React.createElement('br', null),
-                    React.createElement(
-                        'a',
-                        { className: 'icon', href: 'dist/files/resume.pdf' },
-                        'Resume'
-                    )
-                )
-            ),
-            React.createElement(
-                'div',
-                { className: 'quote' },
-                React.createElement(
-                    'p',
-                    null,
-                    '\u201COf any activity you do, ask yourself: If I were the last person on earth, would I still do it?\u201D'
-                ),
-                React.createElement(
-                    'p',
-                    null,
-                    '- Steven Pressfield'
-                )
-            ),
-            React.createElement(_Skills2.default, null)
-        );
-    }
-});
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _WebProject = __webpack_require__(14);
+var _WebProject = __webpack_require__(12);
 
 var _WebProject2 = _interopRequireDefault(_WebProject);
 
@@ -687,7 +585,7 @@ module.exports = React.createClass({
 });
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -730,6 +628,93 @@ module.exports = {
 };
 
 /***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(14);
+
+var _NavBar = __webpack_require__(6);
+
+var _NavBar2 = _interopRequireDefault(_NavBar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = React.createClass({
+    displayName: 'exports',
+
+
+    render: function render() {
+
+        return React.createElement(
+            'div',
+            { className: 'topbar' },
+            React.createElement(
+                'div',
+                { className: 'nav-wrapper' },
+                React.createElement(_NavBar2.default, null)
+            ),
+            React.createElement(
+                'div',
+                { className: 'header' },
+                React.createElement(
+                    'h1',
+                    null,
+                    ' Juan C. Gonzalez '
+                ),
+                React.createElement(
+                    'h3',
+                    null,
+                    ' < Software Developer /> '
+                )
+            ),
+            React.createElement(
+                'div',
+                { style: { display: "none" } },
+                React.createElement(
+                    'a',
+                    { title: 'Linkedin', href: 'https://linkedin.com/in/juan-gonzalez-659207139', className: 'icon' },
+                    React.createElement('i', { className: 'fa fa-linkedin fa-2x' })
+                ),
+                React.createElement(
+                    'a',
+                    { title: 'Github', href: 'https://github.com/1moosey1', className: 'icon' },
+                    React.createElement('i', { className: 'fa fa-github fa-2x' })
+                ),
+                React.createElement(
+                    'a',
+                    { title: 'Codepen', href: 'https://codepen.io/1Moosey1', className: 'icon' },
+                    React.createElement('i', { className: 'fa fa-codepen fa-2x' })
+                ),
+                React.createElement(
+                    'a',
+                    { title: 'freeCodeCamp', href: 'https://www.freecodecamp.com/1moosey1', className: 'icon' },
+                    React.createElement('i', { className: 'fa fa-free-code-camp fa-2x' })
+                ),
+                React.createElement('br', null),
+                React.createElement('br', null)
+            ),
+            React.createElement(
+                'div',
+                { className: 'quote', style: { display: "none" } },
+                React.createElement(
+                    'p',
+                    null,
+                    '\u201COf any activity you do, ask yourself: If I were the last person on earth, would I still do it?\u201D'
+                ),
+                React.createElement(
+                    'p',
+                    null,
+                    '- Steven Pressfield'
+                )
+            )
+        );
+    }
+});
+
+/***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -750,8 +735,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./index.scss");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -767,34 +752,41 @@ if(false) {
 "use strict";
 
 
-var _skills = __webpack_require__(13);
-
-var _skills2 = _interopRequireDefault(_skills);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = React.createClass({
-    displayName: "exports",
-
-
-    render: function render() {
-
-        var skills = ["HTML", "CSS", "SASS", "jQuery", "Django", "Web2Py", "React.js", "Java", "JavaScript", "Python", "C++"];
-        var jsx_skills = [];
-
-        for (var i = 0; i < skills.length; ++i) {
-            jsx_skills.push(React.createElement(
-                "p",
-                { className: "skill" },
-                skills[i]
-            ));
-        }return React.createElement(
-            "div",
-            { className: "skillsection" },
-            jsx_skills
-        );
-    }
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
+
+__webpack_require__(13);
+
+exports.default = function () {
+
+    return React.createElement(
+        "div",
+        { className: "nav" },
+        React.createElement(
+            "ul",
+            null,
+            React.createElement(
+                "li",
+                null,
+                React.createElement(
+                    "a",
+                    { href: "" },
+                    "About Me"
+                )
+            ),
+            React.createElement(
+                "li",
+                null,
+                React.createElement(
+                    "a",
+                    { href: "" },
+                    "Software Development"
+                )
+            )
+        )
+    );
+};
 
 /***/ }),
 /* 7 */
@@ -803,19 +795,21 @@ module.exports = React.createClass({
 "use strict";
 
 
-var _index = __webpack_require__(5);
+__webpack_require__(5);
 
-var _index2 = _interopRequireDefault(_index);
-
-var _projects = __webpack_require__(4);
+var _projects = __webpack_require__(3);
 
 var _projects2 = _interopRequireDefault(_projects);
 
-var _ProfileBar = __webpack_require__(2);
+var _TopBar = __webpack_require__(4);
 
-var _ProfileBar2 = _interopRequireDefault(_ProfileBar);
+var _TopBar2 = _interopRequireDefault(_TopBar);
 
-var _WebProject = __webpack_require__(3);
+var _About = __webpack_require__(16);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _WebProject = __webpack_require__(2);
 
 var _WebProject2 = _interopRequireDefault(_WebProject);
 
@@ -882,7 +876,8 @@ var App = React.createClass({
         return React.createElement(
             'div',
             null,
-            React.createElement(_ProfileBar2.default, null),
+            React.createElement(_TopBar2.default, null),
+            React.createElement(_About2.default, null),
             React.createElement(Content, null)
         );
     }
@@ -899,7 +894,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".profile-bar {\n  background-color: #33464e;\n  box-shadow: 2px 2px 6px 2px #888888;\n  float: left;\n  color: #f0f4c3;\n  margin: 1em;\n  width: 25vw;\n  text-align: center; }\n  @media (max-width: 960px) {\n    .profile-bar {\n      width: 40vw; } }\n  @media (max-width: 760px) {\n    .profile-bar {\n      float: none;\n      display: block;\n      margin: 1em auto;\n      width: 90vw; } }\n\n.portrait {\n  display: block;\n  margin: auto;\n  padding: 3em 0 1em 0;\n  width: 65%; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n\n.quote {\n  margin: 2.5em 2.5em 0 2.5em; }\n", ""]);
+exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
 
 // exports
 
@@ -913,7 +908,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".skillsection {\n  margin: 1em;\n  padding: 0.5em; }\n\n.skill {\n  display: inline-block;\n  background-color: #2c3338;\n  color: #1b81e5;\n  margin: 0.5em;\n  padding: 0.5em;\n  border-radius: 25%; }\n", ""]);
+exports.push([module.i, ".nav {\n  list-style-type: none;\n  padding: 5px; }\n  .nav ul {\n    margin: 10px; }\n    .nav ul li {\n      display: inline-block;\n      font-weight: bold;\n      color: white;\n      margin: 10px;\n      height: 2em;\n      border-bottom-style: solid;\n      border-bottom-width: 2px;\n      border-bottom-color: white; }\n      .nav ul li:hover {\n        border-bottom-color: cadetblue; }\n      .nav ul li a {\n        color: white;\n        text-decoration: none; }\n  @media (max-width: 760px) {\n    .nav {\n      display: none; } }\n", ""]);
 
 // exports
 
@@ -927,7 +922,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
+exports.push([module.i, ".topbar {\n  background-color: #33464e;\n  box-shadow: 4px 0 6px 2px #888888;\n  display: block;\n  color: ghostwhite;\n  text-align: center; }\n\n.nav-wrapper {\n  text-align: right; }\n\n.header {\n  display: inline-block;\n  margin: 2em;\n  padding: 0 6em 0 6em;\n  border-width: 5px;\n  border-color: whitesmoke;\n  border-style: ridge; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n\n.quote {\n  margin: 2.5em 2.5em 0 2.5em; }\n", ""]);
 
 // exports
 
@@ -941,7 +936,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif; }\n\n.content {\n  margin: 1em;\n  text-align: center; }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif;\n  margin: 0; }\n\n.content {\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -967,8 +962,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./profilebar.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./profilebar.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./WebProject.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./WebProject.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -998,8 +993,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./skills.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./skills.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./navbar.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./navbar.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -1029,8 +1024,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./WebProject.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./WebProject.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./topbar.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./topbar.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -1133,6 +1128,89 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+__webpack_require__(18);
+
+exports.default = function () {
+
+    return React.createElement(
+        "div",
+        { className: "about" },
+        React.createElement(
+            "div",
+            { className: "portrait" },
+            React.createElement("img", { src: "dist/images/me.jpg" }),
+            React.createElement(
+                "p",
+                null,
+                " Computer Science Major ",
+                React.createElement("br", null),
+                " University of California, Santa Cruz "
+            ),
+            React.createElement(
+                "a",
+                { className: "icon", href: "dist/files/resume.pdf" },
+                "Resume"
+            )
+        )
+    );
+};
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".about {\n  margin: 4em auto 4em auto;\n  width: 80vw; }\n\n.portrait img {\n  width: 250px;\n  border-radius: 50%; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(17);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
