@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -195,7 +195,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(15);
+var	fixUrls = __webpack_require__(18);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -514,14 +514,107 @@ function updateLink (link, options, obj) {
 "use strict";
 
 
-var _WebProject = __webpack_require__(12);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-var _WebProject2 = _interopRequireDefault(_WebProject);
+__webpack_require__(14);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+exports.default = function () {
 
-module.exports = React.createClass({
-    displayName: "exports",
+    return React.createElement(
+        "div",
+        { className: "about" },
+        React.createElement(
+            "a",
+            { name: "aboutme" },
+            " "
+        ),
+        React.createElement(
+            "div",
+            { className: "portrait" },
+            React.createElement("img", { src: "dist/images/me.jpg" })
+        ),
+        React.createElement(
+            "div",
+            { className: "information" },
+            React.createElement(
+                "p",
+                null,
+                "Currently studying Computer Science at the University of California, Santa Cruz. ",
+                React.createElement("br", null),
+                "I have been developing since 2011 and what started as a curiosity grew to become an integral part of my life. Software development has and continues to enthrall me through its multifaceted problems and rapid advancement. What drives me as a developer is the constant personal growth that goes hand in hand with the technological growth. Frameworks, libraries and languages come and go at a moments notice and it is up to developers to remain adaptable and flexible with the changing ecosystem. In doing so it allows developers to conquer substantial problems and reap the rewards of delivering quality software to the world. These are the exact reasons I strive day in and day out to continuously learn and grow as a developer."
+            )
+        ),
+        React.createElement(
+            "div",
+            { className: "quote" },
+            React.createElement(
+                "p",
+                null,
+                "\u201COf any activity you do, ask yourself: If I were the last person on earth, would I still do it?\u201D",
+                React.createElement("br", null),
+                "- Steven Pressfield, The War of Art"
+            )
+        ),
+        React.createElement(
+            "div",
+            { className: "links" },
+            React.createElement(
+                "a",
+                { title: "Linkedin", href: "https://linkedin.com/in/juan-gonzalez-659207139", className: "icon" },
+                React.createElement(
+                    "i",
+                    { className: "fa fa-linkedin fa-2x" },
+                    " "
+                )
+            ),
+            React.createElement(
+                "a",
+                { title: "Github", href: "https://github.com/1moosey1", className: "icon" },
+                React.createElement(
+                    "i",
+                    { className: "fa fa-github fa-2x" },
+                    " "
+                )
+            ),
+            React.createElement(
+                "a",
+                { title: "Codepen", href: "https://codepen.io/1Moosey1", className: "icon" },
+                React.createElement(
+                    "i",
+                    { className: "fa fa-codepen fa-2x" },
+                    " "
+                )
+            ),
+            React.createElement(
+                "a",
+                { title: "freeCodeCamp", href: "https://www.freecodecamp.com/1moosey1", className: "icon" },
+                React.createElement(
+                    "i",
+                    { className: "fa fa-free-code-camp fa-2x" },
+                    " "
+                )
+            )
+        )
+    );
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+__webpack_require__(15);
+
+exports.default = React.createClass({
+    displayName: "WebProject",
 
 
     render: function render() {
@@ -585,7 +678,7 @@ module.exports = React.createClass({
 });
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -628,100 +721,59 @@ module.exports = {
 };
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(14);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-var _NavBar = __webpack_require__(6);
+__webpack_require__(17);
+
+var _NavBar = __webpack_require__(7);
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = React.createClass({
-    displayName: 'exports',
+exports.default = function () {
 
-
-    render: function render() {
-
-        return React.createElement(
+    return React.createElement(
+        'div',
+        { className: 'topbar' },
+        React.createElement(
             'div',
-            { className: 'topbar' },
+            { className: 'nav-wrapper' },
+            React.createElement(_NavBar2.default, null)
+        ),
+        React.createElement(
+            'div',
+            { className: 'header' },
             React.createElement(
-                'div',
-                { className: 'nav-wrapper' },
-                React.createElement(_NavBar2.default, null)
+                'h1',
+                null,
+                ' Juan C. Gonzalez '
             ),
             React.createElement(
-                'div',
-                { className: 'header' },
-                React.createElement(
-                    'h1',
-                    null,
-                    ' Juan C. Gonzalez '
-                ),
-                React.createElement(
-                    'h3',
-                    null,
-                    ' < Software Developer /> '
-                )
-            ),
-            React.createElement(
-                'div',
-                { style: { display: "none" } },
-                React.createElement(
-                    'a',
-                    { title: 'Linkedin', href: 'https://linkedin.com/in/juan-gonzalez-659207139', className: 'icon' },
-                    React.createElement('i', { className: 'fa fa-linkedin fa-2x' })
-                ),
-                React.createElement(
-                    'a',
-                    { title: 'Github', href: 'https://github.com/1moosey1', className: 'icon' },
-                    React.createElement('i', { className: 'fa fa-github fa-2x' })
-                ),
-                React.createElement(
-                    'a',
-                    { title: 'Codepen', href: 'https://codepen.io/1Moosey1', className: 'icon' },
-                    React.createElement('i', { className: 'fa fa-codepen fa-2x' })
-                ),
-                React.createElement(
-                    'a',
-                    { title: 'freeCodeCamp', href: 'https://www.freecodecamp.com/1moosey1', className: 'icon' },
-                    React.createElement('i', { className: 'fa fa-free-code-camp fa-2x' })
-                ),
-                React.createElement('br', null),
-                React.createElement('br', null)
-            ),
-            React.createElement(
-                'div',
-                { className: 'quote', style: { display: "none" } },
-                React.createElement(
-                    'p',
-                    null,
-                    '\u201COf any activity you do, ask yourself: If I were the last person on earth, would I still do it?\u201D'
-                ),
-                React.createElement(
-                    'p',
-                    null,
-                    '- Steven Pressfield'
-                )
+                'h3',
+                null,
+                ' < Software Developer /> '
             )
-        );
-    }
-});
+        )
+    );
+};
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(11);
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -746,7 +798,7 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -756,7 +808,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(13);
+__webpack_require__(16);
 
 exports.default = function () {
 
@@ -771,7 +823,7 @@ exports.default = function () {
                 null,
                 React.createElement(
                     "a",
-                    { href: "" },
+                    { href: "#aboutme" },
                     "About Me"
                 )
             ),
@@ -780,7 +832,7 @@ exports.default = function () {
                 null,
                 React.createElement(
                     "a",
-                    { href: "" },
+                    { href: "#projects" },
                     "Software Development"
                 )
             )
@@ -789,115 +841,40 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(5);
+__webpack_require__(6);
 
-var _projects = __webpack_require__(3);
-
-var _projects2 = _interopRequireDefault(_projects);
-
-var _TopBar = __webpack_require__(4);
+var _TopBar = __webpack_require__(5);
 
 var _TopBar2 = _interopRequireDefault(_TopBar);
 
-var _About = __webpack_require__(16);
+var _About = __webpack_require__(2);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _WebProject = __webpack_require__(2);
+var _Projects = __webpack_require__(19);
 
-var _WebProject2 = _interopRequireDefault(_WebProject);
+var _Projects2 = _interopRequireDefault(_Projects);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Content = React.createClass({
-    displayName: 'Content',
+var App = function App() {
 
-
-    render: function render() {
-
-        // Load all web projects stored in projects.js
-        var webprojects = [];
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-            for (var _iterator = _projects2.default.webprojects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                var project = _step.value;
-
-
-                var customLink = project.customLink;
-                webprojects.push(React.createElement(_WebProject2.default, { title: project.title,
-                    tools: project.tools,
-                    customLink: customLink ? customLink : undefined,
-                    link: project.link
-                }));
-            }
-        } catch (err) {
-            _didIteratorError = true;
-            _iteratorError = err;
-        } finally {
-            try {
-                if (!_iteratorNormalCompletion && _iterator.return) {
-                    _iterator.return();
-                }
-            } finally {
-                if (_didIteratorError) {
-                    throw _iteratorError;
-                }
-            }
-        }
-
-        return React.createElement(
-            'div',
-            { className: 'content' },
-            React.createElement(
-                'h1',
-                null,
-                ' Web Development '
-            ),
-            webprojects
-        );
-    }
-});
-
-var App = React.createClass({
-    displayName: 'App',
-
-
-    render: function render() {
-
-        return React.createElement(
-            'div',
-            null,
-            React.createElement(_TopBar2.default, null),
-            React.createElement(_About2.default, null),
-            React.createElement(Content, null)
-        );
-    }
-});
+    return React.createElement(
+        'div',
+        null,
+        React.createElement(_TopBar2.default, null),
+        React.createElement(_About2.default, null),
+        React.createElement(_Projects2.default, null)
+    );
+};
 
 ReactDOM.render(React.createElement(App, null), document.body);
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
-
-// exports
-
 
 /***/ }),
 /* 9 */
@@ -908,7 +885,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".nav {\n  list-style-type: none;\n  padding: 5px; }\n  .nav ul {\n    margin: 10px; }\n    .nav ul li {\n      display: inline-block;\n      font-weight: bold;\n      color: white;\n      margin: 10px;\n      height: 2em;\n      border-bottom-style: solid;\n      border-bottom-width: 2px;\n      border-bottom-color: white; }\n      .nav ul li:hover {\n        border-bottom-color: cadetblue; }\n      .nav ul li a {\n        color: white;\n        text-decoration: none; }\n  @media (max-width: 760px) {\n    .nav {\n      display: none; } }\n", ""]);
+exports.push([module.i, ".about {\n  display: block;\n  margin: 4em auto 4em auto;\n  width: 80vw;\n  overflow: auto;\n  text-align: center; }\n\n.portrait {\n  float: left;\n  clear: right;\n  margin-right: 4em; }\n  .portrait img {\n    width: 250px;\n    border-radius: 50%; }\n  @media (max-width: 760px) {\n    .portrait {\n      margin-right: 0;\n      float: none; } }\n\n.information {\n  text-align: left;\n  margin-top: 1em; }\n  @media (max-width: 760px) {\n    .information {\n      text-align: center; } }\n\n.quote {\n  clear: both; }\n\n.links {\n  margin-top: 1em; }\n  .links a {\n    color: black;\n    margin: 0.5em;\n    text-decoration: none; }\n    .links a:visited {\n      color: black;\n      text-decoration: none; }\n    .links a:hover {\n      color: #cccccc;\n      text-decoration: none; }\n", ""]);
 
 // exports
 
@@ -922,7 +899,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".topbar {\n  background-color: #33464e;\n  box-shadow: 4px 0 6px 2px #888888;\n  display: block;\n  color: ghostwhite;\n  text-align: center; }\n\n.nav-wrapper {\n  text-align: right; }\n\n.header {\n  display: inline-block;\n  margin: 2em;\n  padding: 0 6em 0 6em;\n  border-width: 5px;\n  border-color: whitesmoke;\n  border-style: ridge; }\n\n.icon {\n  color: white;\n  margin: 0.5em;\n  text-decoration: none; }\n  .icon:visited {\n    color: white;\n    text-decoration: none; }\n  .icon:hover {\n    color: #cccccc;\n    text-decoration: none; }\n\n.quote {\n  margin: 2.5em 2.5em 0 2.5em; }\n", ""]);
+exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
 
 // exports
 
@@ -936,7 +913,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif;\n  margin: 0; }\n\n.content {\n  text-align: center; }\n", ""]);
+exports.push([module.i, ".nav {\n  list-style-type: none;\n  padding: 5px; }\n  .nav ul {\n    margin: 10px; }\n    .nav ul li {\n      display: inline-block;\n      font-weight: bold;\n      color: white;\n      margin: 10px;\n      height: 2em;\n      border-bottom-style: solid;\n      border-bottom-width: 2px;\n      border-bottom-color: white; }\n      .nav ul li:hover {\n        border-bottom-color: cadetblue; }\n      .nav ul li a {\n        color: white;\n        text-decoration: none; }\n  @media (max-width: 760px) {\n    .nav {\n      display: none; } }\n", ""]);
 
 // exports
 
@@ -945,10 +922,69 @@ exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'O
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".topbar {\n  background-color: #33464e;\n  box-shadow: 4px 0 6px 2px #888888;\n  display: block;\n  color: ghostwhite;\n  text-align: center; }\n\n.nav-wrapper {\n  text-align: right; }\n\n.header {\n  display: inline-block;\n  margin: 2em;\n  padding: 0 6em 0 6em;\n  border-width: 5px;\n  border-color: whitesmoke;\n  border-style: ridge; }\n  @media (max-width: 760px) {\n    .header {\n      padding: 0;\n      border-style: none; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif;\n  margin: 0; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(8);
+var content = __webpack_require__(9);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -973,13 +1009,13 @@ if(false) {
 }
 
 /***/ }),
-/* 13 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9);
+var content = __webpack_require__(11);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1004,13 +1040,13 @@ if(false) {
 }
 
 /***/ }),
-/* 14 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(12);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1035,7 +1071,7 @@ if(false) {
 }
 
 /***/ }),
-/* 15 */
+/* 18 */
 /***/ (function(module, exports) {
 
 
@@ -1130,7 +1166,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 16 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1140,35 +1176,72 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(18);
+__webpack_require__(21);
 
-exports.default = function () {
+var _WebProject = __webpack_require__(3);
 
-    return React.createElement(
-        "div",
-        { className: "about" },
-        React.createElement(
-            "div",
-            { className: "portrait" },
-            React.createElement("img", { src: "dist/images/me.jpg" }),
+var _WebProject2 = _interopRequireDefault(_WebProject);
+
+var _projects = __webpack_require__(4);
+
+var _projects2 = _interopRequireDefault(_projects);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = React.createClass({
+    displayName: 'Projects',
+
+
+    render: function render() {
+
+        // Load all web projects stored in projects.js
+        var webprojects = [];
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = _projects2.default.webprojects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var project = _step.value;
+
+
+                var customLink = project.customLink;
+                webprojects.push(React.createElement(_WebProject2.default, { title: project.title,
+                    tools: project.tools,
+                    customLink: customLink ? customLink : undefined,
+                    link: project.link
+                }));
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+
+        return React.createElement(
+            'div',
+            { className: 'projects' },
             React.createElement(
-                "p",
-                null,
-                " Computer Science Major ",
-                React.createElement("br", null),
-                " University of California, Santa Cruz "
+                'a',
+                { name: 'projects' },
+                ' '
             ),
-            React.createElement(
-                "a",
-                { className: "icon", href: "dist/files/resume.pdf" },
-                "Resume"
-            )
-        )
-    );
-};
+            webprojects
+        );
+    }
+});
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -1176,19 +1249,19 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".about {\n  margin: 4em auto 4em auto;\n  width: 80vw; }\n\n.portrait img {\n  width: 250px;\n  border-radius: 50%; }\n", ""]);
+exports.push([module.i, ".projects {\n  text-align: center; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(17);
+var content = __webpack_require__(20);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1202,8 +1275,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./about.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});

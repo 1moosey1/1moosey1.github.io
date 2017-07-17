@@ -23,25 +23,10 @@
   border-width: 5px;
   border-color: whitesmoke;
   border-style: ridge;
-}
 
-.icon {
+  @media (max-width: 760px) {
 
-  color: white;
-  margin: 0.5em;
-  text-decoration: none;
-
-  &:visited {
-    color: white;
-    text-decoration: none;
+    padding: 0;
+    border-style: none;
   }
-
-  &:hover {
-    color: #cccccc;
-    text-decoration: none;
-  }
-}
-
-.quote {
-  margin: 2.5em 2.5em 0 2.5em;
 }

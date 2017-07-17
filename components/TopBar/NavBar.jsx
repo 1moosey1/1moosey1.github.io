@@ -6,10 +6,10 @@ export default ()=> {
         <div className="nav">
             <ul>
                 <li>
-                    <a href="">About Me</a>
+                    <a href="#aboutme">About Me</a>
                 </li>
                 <li>
-                    <a href="">Software Development</a>
+                    <a href="#projects">Software Development</a>
                 </li>
             </ul>
         </div>

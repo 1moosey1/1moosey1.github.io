@@ -1,6 +1,6 @@
-import styles from './WebProject.scss';
+import './WebProject.scss';
 
-module.exports = React.createClass({
+export default React.createClass({
 
     render: function() {
 
