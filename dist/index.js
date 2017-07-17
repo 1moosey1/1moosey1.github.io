@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -195,7 +195,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(18);
+var	fixUrls = __webpack_require__(21);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -518,7 +518,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(14);
+__webpack_require__(16);
 
 exports.default = function () {
 
@@ -611,7 +611,159 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(15);
+__webpack_require__(18);
+
+var _WebProject = __webpack_require__(6);
+
+var _WebProject2 = _interopRequireDefault(_WebProject);
+
+var _projects = __webpack_require__(7);
+
+var _projects2 = _interopRequireDefault(_projects);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = React.createClass({
+    displayName: 'Projects',
+
+
+    render: function render() {
+
+        // Load all web projects stored in projects.js
+        var webprojects = [];
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = _projects2.default.webprojects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var project = _step.value;
+
+
+                var customLink = project.customLink;
+                webprojects.push(React.createElement(_WebProject2.default, { title: project.title,
+                    tools: project.tools,
+                    customLink: customLink ? customLink : undefined,
+                    link: project.link
+                }));
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+
+        return React.createElement(
+            'div',
+            { className: 'projects' },
+            React.createElement(
+                'a',
+                { name: 'projects' },
+                ' '
+            ),
+            webprojects
+        );
+    }
+});
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+__webpack_require__(20);
+
+var _NavBar = __webpack_require__(8);
+
+var _NavBar2 = _interopRequireDefault(_NavBar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+
+    return React.createElement(
+        'div',
+        { className: 'topbar' },
+        React.createElement(
+            'div',
+            { className: 'nav-wrapper' },
+            React.createElement(_NavBar2.default, null)
+        ),
+        React.createElement(
+            'div',
+            { className: 'header' },
+            React.createElement(
+                'h1',
+                null,
+                ' Juan C. Gonzalez '
+            ),
+            React.createElement(
+                'h3',
+                null,
+                ' < Software Developer /> '
+            )
+        )
+    );
+};
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(15);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+__webpack_require__(17);
 
 exports.default = React.createClass({
     displayName: "WebProject",
@@ -678,7 +830,7 @@ exports.default = React.createClass({
 });
 
 /***/ }),
-/* 4 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -721,7 +873,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 5 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -731,84 +883,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-__webpack_require__(17);
-
-var _NavBar = __webpack_require__(7);
-
-var _NavBar2 = _interopRequireDefault(_NavBar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {
-
-    return React.createElement(
-        'div',
-        { className: 'topbar' },
-        React.createElement(
-            'div',
-            { className: 'nav-wrapper' },
-            React.createElement(_NavBar2.default, null)
-        ),
-        React.createElement(
-            'div',
-            { className: 'header' },
-            React.createElement(
-                'h1',
-                null,
-                ' Juan C. Gonzalez '
-            ),
-            React.createElement(
-                'h3',
-                null,
-                ' < Software Developer /> '
-            )
-        )
-    );
-};
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(13);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./index.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-__webpack_require__(16);
+__webpack_require__(19);
 
 exports.default = function () {
 
@@ -841,15 +916,15 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(6);
+__webpack_require__(5);
 
-var _TopBar = __webpack_require__(5);
+var _TopBar = __webpack_require__(4);
 
 var _TopBar2 = _interopRequireDefault(_TopBar);
 
@@ -857,7 +932,7 @@ var _About = __webpack_require__(2);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Projects = __webpack_require__(19);
+var _Projects = __webpack_require__(3);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
@@ -877,7 +952,7 @@ var App = function App() {
 ReactDOM.render(React.createElement(App, null), document.body);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -891,7 +966,7 @@ exports.push([module.i, ".about {\n  display: block;\n  margin: 4em auto 4em aut
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -905,20 +980,6 @@ exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  backgrou
 
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".nav {\n  list-style-type: none;\n  padding: 5px; }\n  .nav ul {\n    margin: 10px; }\n    .nav ul li {\n      display: inline-block;\n      font-weight: bold;\n      color: white;\n      margin: 10px;\n      height: 2em;\n      border-bottom-style: solid;\n      border-bottom-width: 2px;\n      border-bottom-color: white; }\n      .nav ul li:hover {\n        border-bottom-color: cadetblue; }\n      .nav ul li a {\n        color: white;\n        text-decoration: none; }\n  @media (max-width: 760px) {\n    .nav {\n      display: none; } }\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -927,7 +988,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".topbar {\n  background-color: #33464e;\n  box-shadow: 4px 0 6px 2px #888888;\n  display: block;\n  color: ghostwhite;\n  text-align: center; }\n\n.nav-wrapper {\n  text-align: right; }\n\n.header {\n  display: inline-block;\n  margin: 2em;\n  padding: 0 6em 0 6em;\n  border-width: 5px;\n  border-color: whitesmoke;\n  border-style: ridge; }\n  @media (max-width: 760px) {\n    .header {\n      padding: 0;\n      border-style: none; } }\n", ""]);
+exports.push([module.i, ".projects {\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -941,7 +1002,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif;\n  margin: 0; }\n", ""]);
+exports.push([module.i, ".nav {\n  list-style-type: none;\n  padding: 5px; }\n  .nav ul {\n    margin: 10px; }\n    .nav ul li {\n      display: inline-block;\n      font-weight: bold;\n      color: white;\n      margin: 10px;\n      height: 2em;\n      border-bottom-style: solid;\n      border-bottom-width: 2px;\n      border-bottom-color: white; }\n      .nav ul li:hover {\n        border-bottom-color: cadetblue; }\n      .nav ul li a {\n        color: white;\n        text-decoration: none; }\n  @media (max-width: 760px) {\n    .nav {\n      display: none; } }\n", ""]);
 
 // exports
 
@@ -950,10 +1011,38 @@ exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'O
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".topbar {\n  background-color: #33464e;\n  box-shadow: 4px 0 6px 2px #888888;\n  display: block;\n  color: ghostwhite;\n  text-align: center; }\n\n.nav-wrapper {\n  text-align: right; }\n\n.header {\n  display: inline-block;\n  margin: 2em;\n  padding: 0 6em 0 6em;\n  border-width: 5px;\n  border-color: whitesmoke;\n  border-style: ridge; }\n  @media (max-width: 760px) {\n    .header {\n      padding: 0;\n      border-style: none; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n  background-color: #fafafa;\n  font-family: 'Open Sans', sans-serif;\n  margin: 0; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -978,13 +1067,13 @@ if(false) {
 }
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(11);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1009,13 +1098,44 @@ if(false) {
 }
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(11);
+var content = __webpack_require__(12);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(13);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1040,13 +1160,13 @@ if(false) {
 }
 
 /***/ }),
-/* 17 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(14);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1071,7 +1191,7 @@ if(false) {
 }
 
 /***/ }),
-/* 18 */
+/* 21 */
 /***/ (function(module, exports) {
 
 
@@ -1164,126 +1284,6 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-__webpack_require__(21);
-
-var _WebProject = __webpack_require__(3);
-
-var _WebProject2 = _interopRequireDefault(_WebProject);
-
-var _projects = __webpack_require__(4);
-
-var _projects2 = _interopRequireDefault(_projects);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = React.createClass({
-    displayName: 'Projects',
-
-
-    render: function render() {
-
-        // Load all web projects stored in projects.js
-        var webprojects = [];
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-            for (var _iterator = _projects2.default.webprojects[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                var project = _step.value;
-
-
-                var customLink = project.customLink;
-                webprojects.push(React.createElement(_WebProject2.default, { title: project.title,
-                    tools: project.tools,
-                    customLink: customLink ? customLink : undefined,
-                    link: project.link
-                }));
-            }
-        } catch (err) {
-            _didIteratorError = true;
-            _iteratorError = err;
-        } finally {
-            try {
-                if (!_iteratorNormalCompletion && _iterator.return) {
-                    _iterator.return();
-                }
-            } finally {
-                if (_didIteratorError) {
-                    throw _iteratorError;
-                }
-            }
-        }
-
-        return React.createElement(
-            'div',
-            { className: 'projects' },
-            React.createElement(
-                'a',
-                { name: 'projects' },
-                ' '
-            ),
-            webprojects
-        );
-    }
-});
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".projects {\n  text-align: center; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(20);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./project.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
 
 /***/ })
 /******/ ]);

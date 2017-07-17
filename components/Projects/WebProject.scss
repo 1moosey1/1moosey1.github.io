@@ -9,7 +9,6 @@
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  //border-color: $nav-font;
   box-shadow: 2px 2px 4px #888888;
 
   @media (max-width: 760px) {
@@ -42,11 +41,20 @@
   height: 256px;
   width: inherit;
   overflow: hidden;
+
+  //@media (max-width: 760px) {
+  //  display: none;
+  //  height: inherit;
+  //}
 }
 
 .thumbnail {
 
   img {
+
     max-width: 100%;
+    //@media (max-width: 760px) {
+    //  display: none;
+    //}
   }
 }
