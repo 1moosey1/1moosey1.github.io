@@ -42,10 +42,10 @@
   width: inherit;
   overflow: hidden;
 
-  //@media (max-width: 760px) {
-  //  display: none;
-  //  height: inherit;
-  //}
+  @media (max-width: 760px) {
+    display: none;
+    height: inherit;
+  }
 }
 
 .thumbnail {
@@ -53,8 +53,8 @@
   img {
 
     max-width: 100%;
-    //@media (max-width: 760px) {
-    //  display: none;
-    //}
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
 }
