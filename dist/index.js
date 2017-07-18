@@ -974,7 +974,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n\n.thumbnail img {\n  max-width: 100%; }\n", ""]);
+exports.push([module.i, ".tbinfo-wrapper {\n  display: inline-block;\n  background-color: #fffae8;\n  width: 20em;\n  margin: 0.5em;\n  border-radius: 5px;\n  border-style: solid;\n  border-width: 1px;\n  box-shadow: 2px 2px 4px #888888; }\n  @media (max-width: 760px) {\n    .tbinfo-wrapper {\n      width: 18em; } }\n\n.info {\n  padding: 5px;\n  text-align: left; }\n  .info h4, .info p {\n    margin: 5px; }\n  .info a {\n    margin: 5px;\n    color: black;\n    text-decoration: none; }\n    .info a:hover {\n      text-decoration: underline; }\n\n.thumbnail-container {\n  height: 256px;\n  width: inherit;\n  overflow: hidden; }\n  @media (max-width: 760px) {\n    .thumbnail-container {\n      display: none;\n      height: inherit; } }\n\n.thumbnail img {\n  max-width: 100%; }\n  @media (max-width: 760px) {\n    .thumbnail img {\n      display: none; } }\n", ""]);
 
 // exports
 
