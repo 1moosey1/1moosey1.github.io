@@ -9,7 +9,7 @@ module.exports = {
     },
     {
         title: "Simon Game",
-        tools: "react.js, sass, webpack",
+        tools: "react.js, sass",
         link: "simon-game"
     },
     {
@@ -36,6 +36,12 @@ module.exports = {
         title: "Twitch API",
         tools: "jquery, twitchAPI",
         link: "twitch-list"
+    },
+    {
+        title: "URL Shortener Microservice",
+        tools: "express.js, mongoDB",
+        customLink: "https://lit-stream-87423.herokuapp.com/",
+        link: "urlshortener-ms"
     }],
     softwareprojects: []
 };
