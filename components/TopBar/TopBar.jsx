@@ -11,7 +11,7 @@ export default ()=> {
             </div>
 
             <div className="header">
-                <h1> Juan C. Gonzalez </h1>
+                <h1> Juan C. Gonzalez Jr. </h1>
                 <h3> &lt; Software Developer /&gt; </h3>
             </div>
         </div>

@@ -520,6 +520,12 @@ Object.defineProperty(exports, "__esModule", {
 
 __webpack_require__(16);
 
+var _Skills = __webpack_require__(22);
+
+var _Skills2 = _interopRequireDefault(_Skills);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 exports.default = function () {
 
     return React.createElement(
@@ -538,14 +544,15 @@ exports.default = function () {
         React.createElement(
             "div",
             { className: "information" },
+            React.createElement("hr", null),
+            React.createElement("br", null),
             React.createElement(
                 "p",
                 null,
-                "Currently studying Computer Science at the University of California, Santa Cruz. ",
-                React.createElement("br", null),
-                "I have been developing since 2011 and what started as a curiosity grew to become an integral part of my life. Software development has and continues to enthrall me through its multifaceted problems and rapid advancement. What drives me as a developer is the constant personal growth that goes hand in hand with the technological growth. Frameworks, libraries and languages come and go at a moments notice and it is up to developers to remain adaptable and flexible with the changing ecosystem. In doing so it allows developers to conquer substantial problems and reap the rewards of delivering quality software to the world. These are the exact reasons I strive day in and day out to continuously learn and grow as a developer."
+                "Recent graduate from UCSC with a B.S. in Computer Science and have been involved with software development since 2011. What was originally a hobby grew to become an integral part of my life. Software development never fails to enthrall me through its multifaceted problems and rapid advancement. What drives me as a developer is the constant personal growth that goes hand in hand with the technological growth in the world. Frameworks, libraries and languages come and go with time and it is up to developers to remain adaptable and flexible with the changing ecosystem. I strive day in and day out to continuously learn, grow as a developer and be the best version of myself."
             )
         ),
+        React.createElement("br", null),
         React.createElement(
             "div",
             { className: "quote" },
@@ -557,6 +564,7 @@ exports.default = function () {
                 "- Steven Pressfield, The War of Art"
             )
         ),
+        React.createElement(_Skills2.default, null),
         React.createElement(
             "div",
             { className: "links" },
@@ -710,7 +718,7 @@ exports.default = function () {
             React.createElement(
                 'h1',
                 null,
-                ' Juan C. Gonzalez '
+                ' Juan C. Gonzalez Jr. '
             ),
             React.createElement(
                 'h3',
@@ -1289,6 +1297,91 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _skills = __webpack_require__(24);
+
+var _skills2 = _interopRequireDefault(_skills);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = React.createClass({
+    displayName: "Skills",
+
+
+    render: function render() {
+
+        var skills = ["Java", "JavaScript", "HTML", "CSS", "SASS", "jQuery", "React.js", "Django", "Python"];
+
+        var jsx_skills = [];
+        for (var i = 0; i < skills.length; ++i) {
+            jsx_skills.push(React.createElement(
+                "p",
+                { className: "skill" },
+                skills[i]
+            ));
+        }return React.createElement(
+            "div",
+            { className: "skillsection" },
+            jsx_skills
+        );
+    }
+});
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".skillsection {\n  margin: 0.5em;\n  padding: 0.25em; }\n\n.skill {\n  display: inline-block;\n  color: #1b81e5;\n  margin: 0.25em;\n  padding: 0.25em; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(23);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./skills.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./skills.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

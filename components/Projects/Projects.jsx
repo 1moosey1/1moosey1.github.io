@@ -15,7 +15,7 @@ export default React.createClass({
 
                 (<WebProject title = { project.title }
                              tools = { project.tools }
-                             customLink = { customLink ? customLink : undefined}
+                             customLink = { customLink ? customLink : undefined }
                              link = { project.link }
                 />)
             )

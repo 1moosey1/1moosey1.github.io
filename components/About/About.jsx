@@ -1,4 +1,5 @@
 import './about.scss';
+import Skills from "./Skills.jsx";
 
 export default ()=> {
 
@@ -12,19 +13,21 @@ export default ()=> {
             </div>
 
             <div className="information">
+                <hr/>
+                <br/>
                 <p>
-                    Currently studying Computer Science at the University of California, Santa Cruz. <br />
-                    I have been developing since 2011 and what started as a curiosity grew to become an integral part of my
-                    life. Software development has and continues to enthrall me through its multifaceted problems and rapid
-                    advancement. What drives me as a developer is the constant personal growth that goes hand in hand with
-                    the technological growth. Frameworks, libraries and languages come and go at a moments notice and it is
-                    up to developers to remain adaptable and flexible with the changing ecosystem. In doing so it allows
-                    developers to conquer substantial problems and reap the rewards of delivering quality software to the
-                    world. These are the exact reasons I strive day in and day out to continuously learn and grow as a
-                    developer.
+                    Recent graduate from UCSC with a B.S. in Computer Science and have been involved with software
+                    development since 2011. What was originally a hobby grew to become an integral part of my life.
+                    Software development never fails to enthrall me through its multifaceted problems and rapid
+                    advancement. What drives me as a developer is the constant personal growth that goes hand in hand
+                    with the technological growth in the world. Frameworks, libraries and languages come and go with
+                    time and it is up to developers to remain adaptable and flexible with the changing ecosystem. I
+                    strive day in and day out to continuously learn, grow as a developer and be the best version of
+                    myself.
                 </p>
-
             </div>
+
+            <br />
 
             <div className="quote">
                 <p>
@@ -33,6 +36,8 @@ export default ()=> {
                     - Steven Pressfield, The War of Art
                 </p>
             </div>
+
+            <Skills />
 
             <div className="links">
                 <a title="Linkedin" href="https://linkedin.com/in/juan-gonzalez-659207139" className="icon">
