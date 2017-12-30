@@ -16,14 +16,13 @@ export default ()=> {
                 <hr/>
                 <br/>
                 <p>
-                    Recent graduate from UCSC with a B.S. in Computer Science and have been involved with software
-                    development since 2011. What was originally a hobby grew to become an integral part of my life.
-                    Software development never fails to enthrall me through its multifaceted problems and rapid
-                    advancement. What drives me as a developer is the constant personal growth that goes hand in hand
-                    with the technological growth in the world. Frameworks, libraries and languages come and go with
-                    time and it is up to developers to remain adaptable and flexible with the changing ecosystem. I
-                    strive day in and day out to continuously learn, grow as a developer and be the best version of
-                    myself.
+                    Recent graduate from UCSC with a B.S. in Computer Science and have been programming since 2011.
+                    What start as hobby has grown to become an integral part of my life. Software development never
+                    fails to enthrall me through its multifaceted problems and rapid advancement. What drives me as a
+                    developer is the constant personal growth that goes hand in hand with the technological growth in
+                    the world. Frameworks, libraries and languages come and go with time and it is up to developers to
+                    remain adaptable and flexible with the changing ecosystem. I aim day in and day out to continuously
+                    learn, grow as a developer and become the best version of myself.
                 </p>
             </div>
 
